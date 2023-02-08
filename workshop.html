@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .heading{
+            background-color: aquamarine;
+            padding: 5px 5px;
+        }
+        .main-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1400px;
+            height: 600px;
+        }
+        .span-1{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .span-2{
+            margin-left: 50px;
+            font-size: 13px;
+        }
+        .div-1 , .div-2{
+            width: 700px;
+            }
+         
+        .div-1 p{
+             text-decoration: underline;
+        }
+        .div-2 p{
+             text-decoration: underline;
+        }
+        .div-1,.div-2{
+            display: flex;
+            flex-direction: column ;
+            justify-content: space-evenly;
+        }
+        .div-2{
+            margin-left: 70px;
+        }
+        .div-1 div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .div-2 div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+        input[type="text"],input[type="email"] ,input[type="number"]{
+            width: 300px;
+        }
+        select{
+            width: 308px;
+        }
+        .footer{
+            text-align:center ;
+            background-color: lightgray;
+            padding: 10px 10px;
+        }
+        button{
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 4px 12px;
+        }
+
+        @media screen and (max-width: 1024px){
+            body{
+                background-color: blueviolet;
+                height: 100vh;
+            }
+            .main-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1024px;   
+            }
+            .div-1 , .div-2{
+            width: 500px;
+            }
+            .div-1{
+                margin-left: 6px;
+            }
+            .div-2{
+                margin-right: 6px;
+                margin-left: 0px;
+            }
+            
+        }
+        @media screen and (max-width: 768px){
+            body{
+                background-color: rgb(43, 217, 226);
+                height: 100vh;
+            }
+            .main-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 768px;   
+            }
+            .div-1 , .div-2{
+            width: 380px;
+            margin-left: 0px;
+            }
+            .div-1{
+                margin-left: 2px;
+            }
+            .div-2{
+                margin-right: 2px;
+            }
+            input[type="text"],input[type="email"] ,input[type="number"]{
+            width: 200px;
+            }
+            select{
+            width: 205px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="heading">
+        <span class="span-1">Workshop Registration</span>
+        <span class="span-2">More Actions</span>
+    </div>
+    <form action="">
+        <div class="main-div">
+            <div class="div-1">
+                <div>
+                    <p>Register now while seats are available!</p>
+                </div>
+                <div>
+                    <label for="">First Name *</label>
+                    <input type="text">
+                </div>
+                <div>
+                     <label for="">Last Name *</label>
+                     <input type="text">
+                </div>
+                <div>
+                   <label for="">CompanyInstitution *</label>
+                   <input type="text">
+                </div>
+                <div>
+                    <label for="">Address *</label>
+                    <textarea name="" id="" cols="39" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="">City</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">State/Province/Region</label>
+                    <select name="" id="">
+                        <option value="">select</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Country</label>
+                    <select name="" id="">
+                        <option value="">select</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Email *</label>
+                    <input type="email">
+                </div>
+                <div>
+                    <label for="">Phone Number *</label>
+                    <input type="number">
+                </div>
+        
+            </div>
+            <div class="div-2">
+                <div>
+                    <p>Lunch</p>
+                </div>
+                <div>
+                    <label for="">Meal Preference</label>
+                    <select name="" id="">
+                        <option value="">Vegeterian</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div>
+                    <p>Payment Details</p>
+                </div>
+                <div>
+                    <label for="">Payment Mode</label>
+                    <input type="checkbox">
+                    <label for="">Cash</label><br>
+                    <input type="checkbox">
+                    <label for="">Cheque</label><br>
+                    <input type="checkbox">
+                    <label for="">Demand Draft</label>
+                </div>
+                <div>
+                    <label for="">DD/Cheque No.</label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label for="">Drawn On(Bank Name)</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Payable At</label>
+                    <input type="text">
+                </div>
+                 
+            </div>
+    
+        </div>
+        <div class="footer">
+            <button>Submit</button>
+            <button>Reset</button>
+        </div>
+
+    </form>
+    
+    
+    
+
+</body>
+</html>
